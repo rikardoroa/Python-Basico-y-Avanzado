@@ -1,0 +1,10 @@
+1.Crear la base de datos PRUEBA
+2. los scripts del 1 al 3 contiene el codigo de las relaciones y creaciones de las tablas
+3. el script 4 contiene la informacion acerca de la gestion del asesor por dia
+4. primero se deben correr los scripts del 1 al 3 en orden
+5. luego de correr los scripts del 1 al 3, correr el script en python que carga los datos de los archivos excel
+que se encuentran en la carpeta "tablas excel", solo se debe cambiar la ruta y listo.
+
+
+
+posdata: para cambiar la ruta del directorio solo se debe copiar la nueva ruta por cada uno de los archivos excel en el script de python, se uso jupyter notebook para crear el archivo, tambien puede correr en pycharm, pero recomiendo jupyter.
