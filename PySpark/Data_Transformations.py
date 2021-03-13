@@ -1,11 +1,23 @@
-# Databricks notebook source
+
+#Avro basics with python and databricks
+#just python it!
+#script by @rikardoroa
+
+#Databricks notebook source
+#link below for view
+#https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1583121630593485/2798185413299793/1330152028615219/latest.html
+
+#this script has to be executed with the spark-avro_2.11-4.0.0 library (I recommended use databricks for external spark libraries, such libraries,
+#have a lot of bugs in windows and
+#some of then are to complicated for windows installation), that you can download from maven repository and install it.
+#the apache spark superior of 2.4 version does not containt this library anymore.
+
 from pyspark.sql.functions import*
 from pyspark.sql import SparkSession as Sesion
 import pyspark.sql as py
 import pyspark.sql.types as ptypes
 from IPython.display import display, HTML
 
-# COMMAND ----------
 
 class csv_avro_file_basic:
   
@@ -23,7 +35,6 @@ class csv_avro_file_basic:
     ])
     order_schema = self.order_schema 
     
-  
   def show_schema(self):
     self.order_schema = order_schema
     spark = self.session
@@ -40,23 +51,18 @@ class csv_avro_file_basic:
     return csv_load.show()
     
 
-# COMMAND ----------
 
 load_avro = csv_avro_file_basic()
 
-# COMMAND ----------
 
 load_avro.read_schema()
 
-# COMMAND ----------
+
 
 load_avro.show_schema()
 
-# COMMAND ----------
+
 
 load_avro.write_avro_schema()
 
-# COMMAND ----------
-
-display(HTML('<a href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1583121630593485/2798185413299793/1330152028615219/latest.html"> Avro File Basics With Databricks </a>'))
 
