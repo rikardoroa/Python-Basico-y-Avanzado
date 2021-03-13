@@ -3,6 +3,7 @@ from pyspark.sql.functions import*
 from pyspark.sql import SparkSession as Sesion
 import pyspark.sql as py
 import pyspark.sql.types as ptypes
+from IPython.display import display, HTML
 
 # COMMAND ----------
 
@@ -54,3 +55,8 @@ load_avro.show_schema()
 # COMMAND ----------
 
 load_avro.write_avro_schema()
+
+# COMMAND ----------
+
+display(HTML('<a href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1583121630593485/2798185413299793/1330152028615219/latest.html"> Avro File Basics With Databricks </a>'))
+
