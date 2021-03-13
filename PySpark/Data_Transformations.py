@@ -4,6 +4,10 @@ from pyspark.sql import SparkSession as Sesion
 import pyspark.sql as py
 import pyspark.sql.types as ptypes
 from IPython.display import display, HTML
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5206c70d5298dc9ec5729d91e0bc073e55de2d18
 
 # COMMAND ----------
 
@@ -56,7 +60,14 @@ load_avro.show_schema()
 
 load_avro.write_avro_schema()
 
+<<<<<<< HEAD
 # COMMAND ----------
 
 display(HTML('<a href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1583121630593485/2798185413299793/1330152028615219/latest.html"> Avro File Basics With Databricks </a>'))
 
+=======
+
+##online Notebook##
+
+display(HTML('<a href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1583121630593485/2798185413299793/1330152028615219/latest.html"> Avro File Basics With Databricks </a>'))
+>>>>>>> 5206c70d5298dc9ec5729d91e0bc073e55de2d18
